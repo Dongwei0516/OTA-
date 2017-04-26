@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg">
+
+
+    <RelativeLayout
+        android:id="@+id/startScanRl"
+        android:layout_marginTop="20dp"
+        android:layout_width="335dp"
+        android:layout_height="458dp"
+        android:background="@drawable/border"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/startScanBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/refresh_l"
+            android:text="开始扫描"
+            android:textColor="#0287de"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/blelist_Rl"
+        android:layout_width="335dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/list_Rl_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#e5f1fb">
+
+            <RelativeLayout
+                android:id="@+id/refresh_btn"
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="重新扫描"
+                    android:textSize="17sp"
+                    android:textColor="#0174d7"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/refresh_s"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/devicelist"
+            android:layout_below="@id/list_Rl_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
